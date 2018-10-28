@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Issue Maker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body onload="fetchIssues()">
+	<div class="container">
+		<div class="page-header">
+			<h1>Issue Maker <small>By DevoHUB</small></h1> 
+		</div>
+		<div class="jumbotron">
+			<h3>Add New Issue</h3>
+			<form id="issue-form">
+				<div class="form-group-lg">
+					<label for="description" class="control-label">Issue</label>
+					<textarea class="form-control container" id="issue-description" placeholder="Describe the issue ..."></textarea>
+				</div>
+				<div class="form-group-lg">
+					<label for="severity" class="control-label">Severity</label>
+					<select class="form-control" name="severity" id="issue-severity">
+						<option value="low">Low</option>
+						<option value="high">High</option>
+						<option value="medium">Medium</option>
+					</select>
+				</div>
+				<div class="form-group-sm">
+					<label for="assigned" class="control-label">Assigned to</label>
+					<input class="form-control" type="text" name="assigned" id="issue-assigned" placeholder="Enter Responsible ... ">
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Add Issue" class="btn btn-success">
+				</div>
+			</form>
+		</div>
+
+		<div class="">
+			<div id="issue-list">
+
+			</div>
+		</div><br><br>
+		<div class="modal-footer">
+			Powered By <a href="#" class="text-primary">DevoHUB</a>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://chancejs.com/chance.min.js"></script>
+	<script src="/main.js"></script>
+</body>
+</html>
