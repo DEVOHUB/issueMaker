@@ -8,7 +8,7 @@
 <body onload="fetchIssues()">
 	<div class="container">
 		<div class="page-header">
-			<h1>Issue Maker <small>By DevoHUB</small></h1> 
+			<h1>Issue Maker <small>By <a href="https://github.com/DEVOHUB/issueMaker">DevoHUB</a></small></h1> 
 		</div>
 		<div class="jumbotron">
 			<h3>Add New Issue</h3>
@@ -17,6 +17,7 @@
 					<label for="description" class="control-label">Issue</label>
 					<textarea class="form-control container" id="issue-description" placeholder="Describe the issue ..."></textarea>
 				</div>
+				<br>
 				<div class="form-group-lg">
 					<label for="severity" class="control-label">Severity</label>
 					<select class="form-control" name="severity" id="issue-severity">
@@ -25,12 +26,14 @@
 						<option value="medium">Medium</option>
 					</select>
 				</div>
-				<div class="form-group-sm">
+				<br>
+				<div class="form-group-lg">
 					<label for="assigned" class="control-label">Assigned to</label>
 					<input class="form-control" type="text" name="assigned" id="issue-assigned" placeholder="Enter Responsible ... ">
 				</div>
+				<br>
 				<div class="form-group">
-					<input type="submit" value="Add Issue" class="btn btn-success">
+					<input type="submit" value="Add Issue" class="btn btn-primary">
 				</div>
 			</form>
 		</div>
@@ -41,7 +44,7 @@
 			</div>
 		</div><br><br>
 		<div class="modal-footer">
-			Powered By <a href="#" class="text-primary">DevoHUB</a>
+			Powered By <a href="https://github.com/DEVOHUB/issueMaker" class="text-primary">DevoHUB</a>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
